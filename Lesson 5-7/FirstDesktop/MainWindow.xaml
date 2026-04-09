@@ -1,0 +1,39 @@
+﻿<Window x:Class="FirstDesktop.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FirstDesktop"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid ShowGridLines="True">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <!-- Row0 Column0 -->
+        <Border
+             Margin="10px"
+             BorderThickness="8 8 8 8"
+             CornerRadius="8"
+             BorderBrush="Blue">
+            <Button
+                Background="#1f1f1f"
+                Foreground="White"
+                FontWeight="Bold"
+                FontSize="30px"
+                Click="touch_btn_Click"
+                >Touch</Button>
+        </Border>
+
+        <Button
+            Grid.Row="1" Grid.Column="1"
+            >Hello</Button>
+       
+    </Grid>
+</Window>
