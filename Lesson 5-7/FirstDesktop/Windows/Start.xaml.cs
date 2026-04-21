@@ -23,6 +23,7 @@ namespace FirstDesktop
 
         private void touch_btn_Click(object sender, RoutedEventArgs e)
         {
+            myButton.Background = new SolidColorBrush(Color.FromRgb(60, 128, 135));
             MessageBoxResult result = MessageBox.Show("DON`T", "1", MessageBoxButton.OKCancel, MessageBoxImage.Error);
 
             if (result == MessageBoxResult.OK)

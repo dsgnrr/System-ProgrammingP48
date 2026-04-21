@@ -23,6 +23,7 @@
              CornerRadius="8"
              BorderBrush="Blue">
             <Button
+                x:Name="myButton"
                 Background="#1f1f1f"
                 Foreground="White"
                 FontWeight="Bold"
@@ -34,6 +35,5 @@
         <Button
             Grid.Row="1" Grid.Column="1"
             >Hello</Button>
-       
     </Grid>
 </Window>
