@@ -5,16 +5,55 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FirstDesktop.Windows"
         mc:Ignorable="d"
-        Title="Containers" ResizeMode="NoResize" Height="800" Width="800">
+        Title="Containers" Height="800" Width="800">
     <Grid ShowGridLines="True">
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
+            <RowDefinition/>
         </Grid.RowDefinitions>
-        <StackPanel Orientation="Horizontal">
+        <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Hidden">
+        <StackPanel Orientation="Horizontal" CanHorizontallyScroll="True">
+                <Label Background="Orange" Margin="10" FontSize="50" VerticalAlignment="Center" Padding="10">
+                    <Button MouseEnter="Button_MouseEnter">Button</Button>
+                </Label>
             <Label Background="Orange" Margin="10" FontSize="50" VerticalAlignment="Center" Padding="10">1</Label>
-        </StackPanel>
+            <Label Background="Orange" Margin="10" FontSize="50" VerticalAlignment="Center" Padding="10">1</Label>
+            <Label Background="Orange" Margin="10" FontSize="50" VerticalAlignment="Center" Padding="10">1</Label>
+            <Label Background="Orange" Margin="10" FontSize="50" VerticalAlignment="Center" Padding="10">1</Label>
+            <Label Background="Orange" Margin="10" FontSize="50" VerticalAlignment="Center" Padding="10">1</Label>
+            <Label Background="Orange" Margin="10" FontSize="50" VerticalAlignment="Center" Padding="10">1</Label>
+            <Label Background="Orange" Margin="10" FontSize="50" VerticalAlignment="Center" Padding="10">1</Label>
+            <Label Background="Orange" Margin="10" FontSize="50" VerticalAlignment="Center" Padding="10">1</Label>
+            <Label Background="Orange" Margin="10" FontSize="50" VerticalAlignment="Center" Padding="10">1</Label>
+            <Label Background="Orange" Margin="10" FontSize="50" VerticalAlignment="Center" Padding="10">1</Label>
+            <Label Background="Orange" Margin="10" FontSize="50" VerticalAlignment="Center" Padding="10">1</Label>
+            <Label Background="Orange" Margin="10" FontSize="50" VerticalAlignment="Center" Padding="10">1</Label>
+            </StackPanel>
+        </ScrollViewer>
+        
+        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
+            <WrapPanel x:Name="wrapPanel"></WrapPanel>
+        </ScrollViewer>
+
+        <DockPanel Grid.Row="2" >
+            <Button DockPanel.Dock="Top">Top</Button>
+            <Button DockPanel.Dock="Top">Top</Button>
+            <Button DockPanel.Dock="Right">Right</Button>
+            <Button DockPanel.Dock="Right">Right</Button>
+            <Button>Left</Button>
+            <Button>Left</Button>
+            <Button DockPanel.Dock="Bottom">Bottom</Button>
+            <Button DockPanel.Dock="Bottom">Bottom</Button>
+            <Button>Center</Button>
+            <Button>Center</Button>
+        </DockPanel>
+
+        <Canvas Grid.Row="4">
+            <Button Canvas.Left="50" Canvas.Top="50">Button</Button>
+            <Button Canvas.Left="57" Canvas.Top="50">Button</Button>
+        </Canvas>
         <!--<Grid.ColumnDefinitions>
             <ColumnDefinition Width="0.5*"/>
             <ColumnDefinition Width="3*"/>
